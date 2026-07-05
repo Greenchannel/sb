@@ -23,12 +23,12 @@ simple_index/
 │   ├── lib/            # ToneCSS 库文件
 │   └── themes/         # ToneCSS 主题文件
 └── proxys/
-    └── edgetunnel.html # edgetunnel 代理页面
+    └── 订阅页面
 ```
 
 ## 🚀 使用方式
 
-直接用浏览器打开 `index.html` 即可，无需任何服务器环境。
+直接打开 `index.html` 即可，无需任何服务器环境。
 
 ## 🛠 构建说明
 
@@ -40,7 +40,7 @@ simple_index/
 |------|------|
 | 📖 正经类 | Bing, YouTube, X, Instagram, Facebook, Wikipedia, Yandex, Google, TikTok, Wikipedia 中文, smproxy, ping0.cc |
 | ✈️ 机长类 | hanime1, 禁漫天堂, Pornhub, Jable.TV |
-| 🔗 VPN/订阅 | edgetunnel |
+| 🔗 VPN/订阅 | 订阅页面 |
 | 📄 相关资料 | Fake911 事件相关文章等 |
 
 ## 👤 作者
