@@ -1,0 +1,26 @@
+/* System */
+@import "lib/core.min.css";
+@import "lib/article.min.css";
+@import "lib/aside.min.css";
+@import "lib/blockquote.min.css";
+@import "lib/breadcrumb.min.css";
+@import "lib/code.min.css";
+@import "lib/color.min.css";
+@import "lib/container.min.css";
+@import "lib/details.min.css";
+@import "lib/dropdown.min.css";
+@import "lib/dialog.min.css";
+@import "lib/form.min.css";
+@import "lib/grid.min.css";
+@import "lib/loading.min.css";
+@import "lib/menu.min.css";
+@import "lib/nav.min.css";
+@import "lib/slider.min.css";
+@import "lib/slot.min.css";
+@import "lib/table.min.css";
+@import "lib/text.min.css";
+@import "lib/toaster.min.css";
+@import "lib/tooltip.min.css";
+@import "lib/data.min.css";
+
+@import "themes/azure.css";

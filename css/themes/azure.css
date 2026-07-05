@@ -1,0 +1,88 @@
+:root {
+    /* Core */
+
+    --tone-spacing-unit: 1.25rem;
+
+    /* Article */
+    --tone-article-margin: 0 0 2.5rem 0;
+    --tone-article-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    /* Color */
+    --tone-color-primary: #3366FF;
+    --tone-color-secondary: #293462;
+    --tone-color-tertiary: #526580;
+    --tone-color-success: #2ecc71;
+    --tone-color-danger: #e74c3c;
+    --tone-color-warning: #f39c12;
+    --tone-color-info: #3498db;
+    --tone-color-dark: #1a1c23;
+    --tone-color-focus: rgba(51, 102, 255, 0.25);
+    --tone-color-accent: #FF6B6B;
+    --tone-color-light: #e9ecef;
+    --tone-color-link: #3366FF;
+    --tone-color-link-hover: #254EDB;
+
+    --tone-bg: #f7f9fc;
+    --tone-bg-alt: #ffffff;
+    --tone-bg-filter: blur(8px);
+
+    --tone-border: 1px solid rgba(0, 0, 0, 0.06);
+    --tone-border-radius: 8px;
+
+    /* Container */
+    --tone-header-bg: rgba(255, 255, 255, 0.95);
+    --tone-header-border: none;
+
+    --tone-main-bg: none;
+    --tone-main-border: none;
+
+    --tone-section-bg: none;
+    --tone-section-border: none;
+
+    /* Dialog */
+    --tone-dialog-bg: rgba(0, 0, 0, 0.6);
+    --tone-dialog-bg-filter: blur(4px);
+
+    /* Form */
+    --tone-fieldset-padding: 1.25rem;
+    --tone-fieldset-margin: 0 0 1.75rem 0;
+
+    --tone-legend-font-size: 1.1rem;
+    --tone-legend-font-weight: 600;
+    --tone-legend-margin: 0;
+    --tone-legend-padding: 0 0.75rem;
+
+    --tone-label-font-size: 0.95rem;
+    --tone-label-font-weight: 500;
+    --tone-label-margin: 0 0 0.5rem 0;
+    --tone-label-padding: 0;
+
+    /* Menu */
+
+
+    /* Table */
+    --tone-table-border: 1px solid rgba(0, 0, 0, 0.05);
+    --tone-table-bg-alt: #f9fafc;
+    --tone-table-tr-hover-bg: rgba(51, 102, 255, 0.04);
+
+    /* Typography */
+    --tone-font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --tone-font-headings: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --tone-font-mono: 'JetBrains Mono', 'SF Mono', 'SFMono-Regular', 'Consolas', monospace;
+
+    --tone-text-color: #293462;
+    --tone-text-muted-color: #6c757d;
+
+    /* Tooltip */
+    --tone-tooltip-bg: #293462;
+    --tone-tooltip-bg-alt: #ffffff;
+    --tone-tooltip-text-color: #ffffff;
+    --tone-tooltip-text-muted-color: rgba(255, 255, 255, 0.7);
+    --tone-tooltip-text-align: center;
+    --tone-tooltip-font-size: 0.875rem;
+    --tone-tooltip-border-radius: 6px;
+    --tone-tooltip-spacing-unit: 12px;
+    --tone-tooltip-transition-duration: 0.2s;
+    --tone-tooltip-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    --tone-tooltip-transition-delay: 0.1s;
+}

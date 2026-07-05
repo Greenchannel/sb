@@ -1,0 +1,71 @@
+:root {
+    /* Couleurs */
+    --tone-color-primary: #6A8759;       /* Vert Darcula */
+    --tone-color-secondary: #A9B7C6;     /* Gris clair Darcula */
+    --tone-color-tertiary: #808080;      /* Gris moyen */
+    --tone-color-success: #629755;       /* Vert foncé */
+    --tone-color-danger: #CC7832;        /* Orange Darcula */
+    --tone-color-warning: #BBB529;       /* Jaune foncé */
+    --tone-color-info: #7A9EC2;          /* Bleu Darcula */
+    --tone-color-dark: #1E1F22;          /* Presque noir */
+    --tone-color-focus: rgba(103, 150, 230, 0.4); /* Bleu focus */
+    --tone-color-accent: #CC7832;        /* Orange Darcula */
+    --tone-color-light: #A9B7C6;         /* Gris clair Darcula */
+    --tone-color-link: #6897BB;          /* Bleu clair Darcula */
+    --tone-color-link-hover: #89AFDC;    /* Bleu clair hover */
+
+    /* Couleurs de fond */
+    --tone-bg: #2B2B2B;            /* Fond principal Darcula */
+    --tone-bg-alt: #313335;
+    --tone-bg-filter: blur(4px);         /* Pas de flou */
+
+    /* Bordures */
+    --tone-border: 1px solid rgba(70, 70, 70, 0.5);
+    --tone-border-radius: 3px;
+
+    /* Code */
+    --tone-code-bg: #222;       /* Fond code */
+    --tone-code-color: #A9B7C6;          /* Texte code */
+    --tone-code-border: 1px solid #323232;   /* Bordure code */
+
+    /* Container */
+    --tone-header-bg: #3C3F41;     /* Fond header */
+
+    /* Article */
+    --tone-article-bg: #313335;    /* Fond article */
+    --tone-article-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Formulaires */
+    --tone-form-bg: #3C3F41;       /* Fond form */
+    --tone-form-text-color: #A9B7C6;     /* Texte form */
+
+    /* Bouton */
+    --tone-button-bg: #4E5254;     /* Fond bouton */
+    --tone-button-color: #A9B7C6;        /* Texte bouton */
+    --tone-button-hover-bg: #365880; /* Fond bouton hover */
+    --tone-button-hover-color: #FFFFFF;  /* Texte bouton hover */
+    --tone-button-border: 1px solid #5E6060; /* Bordure bouton */
+
+    /* Menu */
+    --tone-menu-bg: #3C3F41;       /* Fond menu */
+    --tone-menu-text-color: #A9B7C6;     /* Texte menu */
+    --tone-menu-border: 1px solid #555555;   /* Bordure menu */
+
+    /* Table */
+    --tone-table-bg-alt: #323232;  /* Fond alterné table */
+    --tone-table-tr-hover-bg: rgba(55, 55, 55, 0.2);
+
+    /* Typographie */
+    --tone-text-color: #A9B7C6;          /* Couleur texte principale */
+    --tone-text-muted-color: #808080;    /* Couleur texte secondaire */
+
+    --tone-font-headings-color: #A9B7C6;
+
+    --tone-h1-color: #CC7832;            /* Orange Darcula */
+    --tone-h2-color: #A9B7C6;            /* Gris clair */
+
+    /* Tooltip */
+    --tone-tooltip-bg: #3C3F41;
+    --tone-tooltip-text-color: #A9B7C6;
+    --tone-tooltip-border-radius: 3px;
+}
