@@ -6,139 +6,13 @@
   <link rel="icon" href="https://free.picui.cn/free/2026/02/28/69a2640068eda.ico" type="image/x-icon">
   <title>网站导航</title>
   <link rel="stylesheet" href="css/tone.css">
-  <style>
-    :root {
-      --tone-color-primary: #6C5CE7;
-      --tone-color-secondary: #2D3436;
-      --tone-color-accent: #FD79A8;
-      --tone-color-link: #6C5CE7;
-      --tone-color-link-hover: #5A4BD1;
-      --tone-bg: #f8f9fe;
-      --tone-bg-alt: #ffffff;
-      --tone-border-radius: 12px;
-    }
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1.5rem 1rem;
-      width: 100%;
-      max-width: 800px;
-    }
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 0.3rem;
-    }
-    header .subtitle {
-      color: var(--tone-text-muted-color);
-      font-size: 1rem;
-    }
-    main {
-      width: 100%;
-      max-width: 800px;
-      padding: 0 1.5rem 2rem;
-    }
-    .category {
-      margin-bottom: 2.5rem;
-    }
-    .category h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 3px solid var(--tone-color-primary);
-      display: inline-block;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .link-card {
-      background: var(--tone-bg-alt);
-      border-radius: var(--tone-border-radius);
-      padding: 1rem 1.2rem;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-    }
-    .link-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 28px rgba(0,0,0,0.10);
-    }
-    .link-card .site-name {
-      font-weight: 600;
-      font-size: 1.05rem;
-      margin-bottom: 0.3rem;
-    }
-    .link-card .site-name .num {
-      color: var(--tone-text-muted-color);
-      font-weight: 400;
-      margin-right: 0.3rem;
-    }
-    .link-card a {
-      font-size: 0.9rem;
-      color: var(--tone-color-link);
-      text-decoration: none;
-    }
-    .link-card a:hover {
-      color: var(--tone-color-link-hover);
-      text-decoration: underline;
-    }
-    .note {
-      text-align: center;
-      color: var(--tone-text-muted-color);
-      font-size: 0.9rem;
-      margin-top: -1rem;
-      margin-bottom: 2rem;
-      padding: 0.5rem 1rem;
-      background: rgba(253, 121, 168, 0.08);
-      border-radius: var(--tone-border-radius);
-      display: inline-block;
-    }
-    .links-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      background: var(--tone-bg-alt);
-      border-radius: var(--tone-border-radius);
-      padding: 1rem 1.2rem;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    }
-    .links-row a {
-      color: var(--tone-color-link);
-      text-decoration: none;
-      padding: 0.3rem 0.6rem;
-      border-radius: 6px;
-      transition: background 0.2s;
-    }
-    .links-row a:hover {
-      background: rgba(108,92,231,0.08);
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      color: var(--tone-text-muted-color);
-      font-size: 0.85rem;
-      border-top: var(--tone-border);
-      width: 100%;
-      margin-top: 1rem;
-    }
-    @media (max-width: 500px) {
-      header h1 { font-size: 2rem; }
-      .card-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>🌐 网站导航</h1>
-    <p class="subtitle">精选站点 · 快捷直达</p>
+    <h1>🌐 简易海外网站导航</h1>
+    <p class="subtitle">"Across the Great Wall,we can reach every corner in the world"</p>
+    <p class="subtitle">——_cute486_的座右铭</p>
   </header>
 
   <main>
@@ -182,9 +56,13 @@
           <div class="site-name"><span class="num">9.</span>Tiktok</div>
           <a href="https://www.tiktok.com/" target="_blank">普通访问 →</a>
         </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">10.</span>Wikipedia中文</div>
+          <a>普通访问 →</a>
+        </div>
       </div>
       <div style="text-align:center;margin-top:0.8rem;">
-        <span class="note">⚠️ 香港节点无法访问</span>
+        <span class="note">⚠️ TikTok香港节点无法访问</span>
       </div>
     </section>
 
@@ -197,12 +75,19 @@
           <a href="https://hanime1.me" target="_blank">普通访问 →</a>
         </div>
         <div class="link-card">
-          <div class="site-name">📚 回家的路</div>
+          <div class="site-name">禁漫天堂</div>
           <a href="https://jmcomicne.net/" target="_blank">普通访问 →</a>
         </div>
+      <div class="link-card">
+        <div class="site-name">Pornhub</div>
+        <a href="https://www.pornhub.com/" target="_blank">普通访问 →</a>
       </div>
+      <div class="link-card">
+        <div class="site-name">Jable.TV</div>
+        <a href="https://jable.tv/">普通访问 →</a>
+      </div>
+    </div>
     </section>
-
     <!-- 机场订阅/VPN -->
     <section class="category">
       <h2>🔗 机场订阅 / VPN</h2>
@@ -223,6 +108,7 @@
   </main>
 
   <footer>
+    <p>Created by _cute486_ and DeepSeek V4 Flash</p>
     <p>© 2026 网站导航 · 使用 ToneCSS 构建</p>
   </footer>
 </body>
