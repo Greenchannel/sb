@@ -2,22 +2,22 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#6C5CE7">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="网站导航">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://free.picui.cn/free/2026/02/28/69a2640068eda.ico" type="image/x-icon">
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="https://free.picui.cn/free/2026/02/28/69a2640068eda.ico">
   <title>网站导航</title>
   <link rel="stylesheet" href="css/tone.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/glass.css">
 </head>
 <body>
-  <!-- 液态玻璃切换按钮 -->
-  <button id="glass-toggle" onclick="toggleGlass()">✨ 液态玻璃</button>
+  <!-- 🎸《孤独摇滚》全屏壁纸背景 -->
+  <div class="bocchi-bg">
+    <picture>
+      <source media="(max-width: 500px)" srcset="img/bocchi_phone.png">
+      <source media="(max-width: 900px)" srcset="img/bocchi_pb.png">
+      <img src="img/bocchi_bg.png" alt="Bocchi the Rock" loading="lazy"
+           onerror="this.style.display='none'">
+    </picture>
+  </div>
 
   <header>
     <h1>🌐 简易海外网站导航</h1>
@@ -219,42 +219,4 @@
     <p>© 2026 网站导航 · 使用 ToneCSS 构建</p>
   </footer>
 
-  <script>
-    // 注册 Service Worker（PWA 离线支持）
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('sw.js').then(function(reg) {
-          console.log('SW registered:', reg.scope);
-        }).catch(function(err) {
-          console.log('SW registration failed:', err);
-        });
-      });
-    }
-
-    // 液态玻璃切换
-    function toggleGlass() {
-      const body = document.body;
-      const btn = document.getElementById('glass-toggle');
-      body.classList.toggle('glass-mode');
-      btn.textContent = body.classList.contains('glass-mode') ? '🎨 原样式' : '✨ 液态玻璃';
-    }
-
-    // DOM 加载完成后，检查 localStorage 恢复偏好
-    window.addEventListener('DOMContentLoaded', function() {
-      const btn = document.getElementById('glass-toggle');
-      if (localStorage.getItem('glassMode') === 'enabled') {
-        document.body.classList.add('glass-mode');
-        if (btn) btn.textContent = '🎨 原样式';
-      }
-    });
-
-    // 点击切换时保存偏好到 localStorage
-    document.addEventListener('click', function(e) {
-      if (e.target && e.target.id === 'glass-toggle') {
-        localStorage.setItem('glassMode',
-          document.body.classList.contains('glass-mode') ? 'enabled' : 'disabled');
-      }
-    });
-  </script>
 </body>
-</html>
