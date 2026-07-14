@@ -1,0 +1,32 @@
+{
+  "name": "Index - 网站导航",
+  "short_name": "Index",
+  "description": "简易海外网站导航 - 由_cute486_构建",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fe",
+  "theme_color": "#6C5CE7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://free.picui.cn/free/2026/02/28/69a2640068eda.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://free.picui.cn/free/2026/02/28/69a2640068eda.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://free.picui.cn/free/2026/02/28/69a2640068eda.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["navigation", "utilities"],
+  "lang": "zh-CN",
+  "dir": "ltr"
+}

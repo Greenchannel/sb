@@ -1,0 +1,1 @@
+:root{--tone-breadcrumb-separator:'/'}[data-breadcrumb]{padding:10px 20px;list-style:none}[data-breadcrumb] li{display:table-cell;padding:2px}[data-breadcrumb] li+li:before{padding:0 15px;content:var(--tone-breadcrumb-separator)}[data-breadcrumb] li a{text-decoration:none}[data-breadcrumb] li a:hover{color:var(--tone-color-primary);text-decoration:underline}
