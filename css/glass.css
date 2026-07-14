@@ -1,0 +1,210 @@
+/* ============================================
+   液态玻璃（Glassmorphism）样式
+   通过 body.glass-mode 切换启用
+   ============================================ */
+
+/* --- 玻璃变量 --- */
+body.glass-mode {
+  --glass-bg: rgba(255, 255, 255, 0.10);
+  --glass-bg-card: rgba(255, 255, 255, 0.13);
+  --glass-bg-hover: rgba(255, 255, 255, 0.20);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.22);
+  --glass-border-hover: 1px solid rgba(255, 255, 255, 0.40);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  --glass-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.28);
+  --glass-blur: blur(14px);
+  --glass-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* --- 背景：动画渐变（启用玻璃模式时） --- */
+body.glass-mode {
+  background: linear-gradient(-45deg, #6C5CE7, #2D3436, #FD79A8, #0984E3, #1a1a2e);
+  background-size: 400% 400%;
+  animation: glassGradient 10s ease infinite;
+}
+
+@keyframes glassGradient {
+  0%   { background-position: 0% 50%; }
+  25%  { background-position: 100% 0%; }
+  50%  { background-position: 100% 50%; }
+  75%  { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Header 玻璃容器效果 --- */
+body.glass-mode header {
+  background: var(--glass-bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--glass-shadow);
+  padding: 2.5rem 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: var(--glass-transition);
+}
+
+body.glass-mode header:hover {
+  background: var(--glass-bg-hover);
+  border: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+body.glass-mode header h1 {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.glass-mode header .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- 分类标题 --- */
+body.glass-mode .category h2 {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* --- 卡片网格：玻璃卡片 --- */
+body.glass-mode .link-card {
+  background: var(--glass-bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: var(--glass-transition);
+}
+
+body.glass-mode .link-card:hover {
+  background: var(--glass-bg-hover);
+  border: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow-hover);
+  transform: translateY(-6px);
+}
+
+body.glass-mode .link-card .site-name {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.glass-mode .link-card .site-name .num {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+body.glass-mode .link-card a {
+  color: #a29bfe;
+}
+
+body.glass-mode .link-card a:hover {
+  color: #c8c4ff;
+}
+
+/* --- 行内链接容器 --- */
+body.glass-mode .links-row {
+  background: var(--glass-bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: var(--glass-transition);
+}
+
+body.glass-mode .links-row:hover {
+  background: var(--glass-bg-hover);
+  border: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+body.glass-mode .links-row a {
+  color: #a29bfe;
+}
+
+body.glass-mode .links-row a:hover {
+  background: rgba(255, 255, 255, 0.10);
+  color: #c8c4ff;
+}
+
+/* --- 提示标签 .note --- */
+body.glass-mode .note {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  transition: var(--glass-transition);
+}
+
+body.glass-mode .note:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+/* --- Footer --- */
+body.glass-mode footer {
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.glass-mode footer p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- 切换按钮自身也做玻璃风格 --- */
+#glass-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--glass-transition);
+  font-family: inherit;
+}
+
+body.glass-mode #glass-toggle {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+body.glass-mode #glass-toggle:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+body:not(.glass-mode) #glass-toggle {
+  background: #ffffff;
+  color: #333;
+  border-color: #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body:not(.glass-mode) #glass-toggle:hover {
+  background: #f0f0f0;
+  border-color: #bbb;
+  transform: translateY(-2px);
+}
+
+/* --- 平滑过渡：body 内所有元素 --- */
+body.glass-mode,
+body.glass-mode * {
+  transition: background 0.4s ease,
+              backdrop-filter 0.4s ease,
+              border 0.4s ease,
+              box-shadow 0.4s ease,
+              color 0.3s ease,
+              transform 0.3s ease;
+}

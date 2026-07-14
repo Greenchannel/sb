@@ -7,8 +7,12 @@
   <title>网站导航</title>
   <link rel="stylesheet" href="css/tone.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/glass.css">
 </head>
 <body>
+  <!-- 液态玻璃切换按钮 -->
+  <button id="glass-toggle" onclick="toggleGlass()">✨ 液态玻璃</button>
+
   <header>
     <h1>🌐 简易海外网站导航</h1>
     <p class="subtitle">"Across the Great Wall,we can reach every corner in the world"</p>
@@ -74,28 +78,117 @@
       </div>
     </section>
 
-    <!-- 机长类 -->
+    <!-- 机长类（大幅扩充） -->
     <section class="category">
-      <h2>✈️ 机长类</h2>
+      <h2>✈️ 机长类（欧美日韩AV · COSER · 高清写真 · 私拍 · 福利姬）</h2>
       <div class="card-grid">
+        <!-- 日韩AV -->
         <div class="link-card">
-          <div class="site-name"><span class="num">1.</span>hanime1</div>
+          <div class="site-name"><span class="num">1.</span>Jable.TV (日韩AV高清)</div>
+          <a href="https://jable.tv/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">2.</span>hanime1 (动漫+JAV)</div>
           <a href="https://hanime1.me" target="_blank">普通访问 →</a>
         </div>
         <div class="link-card">
-          <div class="site-name"><span class="num">2.</span>禁漫天堂</div>
-          <a href="https://jmcomicne.net/" target="_blank">普通访问 →</a>
+          <div class="site-name"><span class="num">3.</span>Pornhub (欧美日韩全覆盖)</div>
+          <a href="https://www.pornhub.com/" target="_blank">普通访问 →</a>
         </div>
-      <div class="link-card">
-        <div class="site-name"><span class="num">3.</span>Pornhub</div>
-        <a href="https://www.pornhub.com/" target="_blank">普通访问 →</a>
+        <div class="link-card">
+          <div class="site-name"><span class="num">4.</span>JAVGG (高质量JAV)</div>
+          <a href="https://javgg.net/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">5.</span>MissAV (日韩AV免费)</div>
+          <a href="https://missav.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">6.</span>SupJav (JAV高清)</div>
+          <a href="https://supjav.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">7.</span>7mmtv (日韩AV)</div>
+          <a href="https://7mmtv.sx/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">8.</span>xKorean (韩国AV)</div>
+          <a href="https://xkorean.biz/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">9.</span>KissJav (韩国JAV)</div>
+          <a href="https://kissjav.com/" target="_blank">普通访问 →</a>
+        </div>
+
+        <!-- 欧美AV -->
+        <div class="link-card">
+          <div class="site-name"><span class="num">10.</span>Brazzers (欧美 premium)</div>
+          <a href="https://www.brazzers.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">11.</span>Naughty America (欧美故事)</div>
+          <a href="https://www.naughtyamerica.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">12.</span>RealityKings (欧美现实)</div>
+          <a href="https://www.realitykings.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">13.</span>xHamster (欧美+国际)</div>
+          <a href="https://xhamster.com/" target="_blank">普通访问 →</a>
+        </div>
+
+        <!-- COSER & 高质量写真集 -->
+        <div class="link-card">
+          <div class="site-name"><span class="num">14.</span>VR CosplayX (COSER VR)</div>
+          <a href="https://www.vrcosplayx.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">15.</span>Cospuri (日本COSER)</div>
+          <a href="https://www.cospuri.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">16.</span>MetArt (高质量艺术写真)</div>
+          <a href="https://www.metart.com/" target="_blank">普通访问 →</a>
+        </div>
+
+        <!-- 福利姬专区（平台+热门账号） -->
+        <div class="link-card">
+          <div class="site-name"><span class="num">17.</span>OnlyFans (福利姬主平台 - 高尺度私拍)</div>
+          <a href="https://onlyfans.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">18.</span>Patreon (COSER/福利姬订阅)</div>
+          <a href="https://www.patreon.com/" target="_blank">普通访问 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">19.</span>X/Twitter 福利姬搜索</div>
+          <a href="https://x.com/explore" target="_blank">搜索“福利姬”或“coser onlyfans” →</a>
+        </div>
+
+        <!-- 精选福利姬账号（高质量 大尺度） -->
+        <div class="link-card">
+          <div class="site-name"><span class="num">20.</span>猫耳的福利姬 (X平台)</div>
+          <a href="https://x.com/jeason521" target="_blank">X账号 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">21.</span>北的屋 Cos写真福利姬 (X)</div>
+          <a href="https://x.com/beibei1474512" target="_blank">X账号 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">22.</span>CoserFansHub (X资源)</div>
+          <a href="https://x.com/CoserFansHub" target="_blank">X账号 →</a>
+        </div>
+        <div class="link-card">
+          <div class="site-name"><span class="num">23.</span>念 (COS福利 X)</div>
+          <a href="https://x.com/nian73211454" target="_blank">X账号 →</a>
+        </div>
       </div>
-      <div class="link-card">
-        <div class="site-name"><span class="num">4.</span>Jable.TV</div>
-        <a href="https://jable.tv/">普通访问 →</a>
+      <div style="text-align:center;margin-top:0.8rem;">
+        <span class="note">🔞 福利姬账号为公开搜索汇总（X/Twitter、OnlyFans为主），高质量大尺度内容为主。请使用VPN访问 · 内容成人向 · 理性浏览 · 尊重创作者</span>
       </div>
-    </div>
     </section>
+
     <!-- 机场订阅/VPN -->
     <section class="category">
       <h2>🔗 机场订阅 / VPN</h2>
@@ -119,5 +212,32 @@
     <p>Created by _cute486_ and DeepSeek V4 Flash</p>
     <p>© 2026 网站导航 · 使用 ToneCSS 构建</p>
   </footer>
+
+  <script>
+    // 液态玻璃切换
+    function toggleGlass() {
+      const body = document.body;
+      const btn = document.getElementById('glass-toggle');
+      body.classList.toggle('glass-mode');
+      btn.textContent = body.classList.contains('glass-mode') ? '🎨 原样式' : '✨ 液态玻璃';
+    }
+
+    // DOM 加载完成后，检查 localStorage 恢复偏好
+    window.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('glass-toggle');
+      if (localStorage.getItem('glassMode') === 'enabled') {
+        document.body.classList.add('glass-mode');
+        if (btn) btn.textContent = '🎨 原样式';
+      }
+    });
+
+    // 点击切换时保存偏好到 localStorage
+    document.addEventListener('click', function(e) {
+      if (e.target && e.target.id === 'glass-toggle') {
+        localStorage.setItem('glassMode',
+          document.body.classList.contains('glass-mode') ? 'enabled' : 'disabled');
+      }
+    });
+  </script>
 </body>
 </html>
